@@ -1,0 +1,15 @@
+# Initialiser une liste pour stocker les voyelles
+voyelles = []
+
+# Boucle pour obtenir six voyelles de l'utilisateur
+for i in range(6):
+    while True:
+        v = input("Veuillez entrer une voyelle : ")
+        if v.lower() in ['a', 'e', 'i', 'o', 'u', 'y']:
+            voyelles.append(v)
+            break
+        else:
+            print("Ce n'est pas une voyelle. Veuillez réessayer.")
+
+# Afficher les voyelles
+print("Les voyelles que vous avez saisies sont : ", voyelles)
